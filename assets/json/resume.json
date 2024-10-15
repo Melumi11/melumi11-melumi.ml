@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Roy Huang",
+    "label": "Student at the University of Michigan - Ann Arbor",
+    "image": "",
+    "email": "royhuang@umich.edu",
+    "phone": "",
+    "url": "https://melumi11.github.io",
+    "summary": "I am currently studying computer science at UofM.",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "roy-huang-392209271",
+        "url": "https://www.linkedin.com/in/roy-huang-392209271/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Conjuguemos",
+      "position": "Quality Assurance and Security Analyst",
+      "startDate": "2022-06-30",
+      "endDate": "",
+      "highlights": ["Tested features, accessibility, and security of the website's games and services.", "Provided feedback which led to accelerated completion of website redesign and accessibility improvement.", "Demonstrated attention to detail through identifying bugs, UI inconsistencies, and accessibility barriers.", "Provided development and user-oriented feedback to enhance user experience and learning through gamification.", "Arranged product testing dates and managed tester compensation for group game testing."],
+      "summary": "",
+      "url": "https://www.linkedin.com/company/70827375",
+      "location": "MA, United States"
+    },
+    {
+      "name": "KTBYTE",
+      "position": "Programming Teacher",
+      "startDate": "2021-10-31",
+      "endDate": "",
+      "highlights": ["Lead weekly office hours for Java classes, answering questions and assisting students ages 7 to 16 on programming homework/projects including AP Computer Science A and USACO material.", "Taught an in-person beginner Java class for students age 7-11, creating lesson plans, and guiding students in final projects (games such as Pong and Space Invaders.)"],
+      "summary": "",
+      "url": "https://www.linkedin.com/company/11128003",
+      "location": "MA, United States"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Michigan College of Engineering",
+      "area": "Computer Science",
+      "studyType": "Bachelor's degree",
+      "startDate": "2023-08-31",
+      "endDate": "2026-04-30",
+      "score": "3.97",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Computer Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teaching",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
