@@ -245,6 +245,7 @@ exclude:
   - vendor
   - _posts/demo/
   - _projects/demo/
+  - _news/demo/
 keep_files:
   - CNAME
   - .nojekyll
