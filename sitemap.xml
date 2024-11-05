@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://melumi11.github.io/blog/2024/item-rain-gecko/</loc>
+<lastmod>2024-06-17T15:59:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://melumi11.github.io/</loc>
 </url>
 <url>
@@ -17,6 +21,15 @@
 </url>
 <url>
 <loc>https://melumi11.github.io/repositories/</loc>
+</url>
+<url>
+<loc>https://melumi11.github.io/blog/tag/games/</loc>
+</url>
+<url>
+<loc>https://melumi11.github.io/blog/category/games/</loc>
+</url>
+<url>
+<loc>https://melumi11.github.io/blog/2024/</loc>
 </url>
 <url>
 <loc>https://melumi11.github.io/blog/</loc>
