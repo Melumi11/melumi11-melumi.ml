@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://melumi11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://melumi11.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-11-05T05:18:31+00:00</updated><id>https://melumi11.github.io/feed.xml</id><title type="html">blank</title><subtitle>My website!
-</subtitle><entry><title type="html">MKWii Item Rain install guide (gecko code)</title><link href="https://melumi11.github.io/blog/2024/item-rain-gecko/" rel="alternate" type="text/html" title="MKWii Item Rain install guide (gecko code)" /><published>2024-06-17T15:59:00+00:00</published><updated>2024-06-17T15:59:00+00:00</updated><id>https://melumi11.github.io/blog/2024/item-rain-gecko</id><content type="html" xml:base="https://melumi11.github.io/blog/2024/item-rain-gecko/"><![CDATA[<h3 id="introduction">Introduction</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://melumi11.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://melumi11.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-12-29T17:13:04-05:00</updated><id>https://melumi11.github.io/feed.xml</id><title type="html">blank</title><subtitle>My website!
+</subtitle><entry><title type="html">MKWii Item Rain install guide (gecko code)</title><link href="https://melumi11.github.io/blog/2024/item-rain-gecko/" rel="alternate" type="text/html" title="MKWii Item Rain install guide (gecko code)" /><published>2024-06-17T11:59:00-04:00</published><updated>2024-06-17T11:59:00-04:00</updated><id>https://melumi11.github.io/blog/2024/item-rain-gecko</id><content type="html" xml:base="https://melumi11.github.io/blog/2024/item-rain-gecko/"><![CDATA[<h3 id="introduction">Introduction</h3>
 
 <p><a href="https://www.reddit.com/r/MarioKartWii/comments/1diafqnitem_rain_install_guide_dolphin_usb_loader_gx/">Read my cross-posted reddit post here.</a></p>
 
@@ -440,4 +440,314 @@ Thunder Cloud (don't use)
 
 <p><br /></p>
 
-<p>Thanks for reading my post. Please leave a comment or reach out if you have any questions :)</p>]]></content><author><name></name></author><category term="games" /><category term="games" /><summary type="html"><![CDATA[Get item rain in Mario Kart Wii on Dolphin, USB Loader GX]]></summary></entry></feed>
+<p>Thanks for reading my post. Please leave a comment or reach out if you have any questions :)</p>]]></content><author><name></name></author><category term="games" /><category term="games" /><summary type="html"><![CDATA[Get item rain in Mario Kart Wii on Dolphin, USB Loader GX]]></summary></entry><entry><title type="html">3D Printing 2D Images: Guide to Lithophanes</title><link href="https://melumi11.github.io/blog/2023/lithophane-intro-guide/" rel="alternate" type="text/html" title="3D Printing 2D Images: Guide to Lithophanes" /><published>2023-12-09T10:59:00-05:00</published><updated>2023-12-09T10:59:00-05:00</updated><id>https://melumi11.github.io/blog/2023/lithophane-intro-guide</id><content type="html" xml:base="https://melumi11.github.io/blog/2023/lithophane-intro-guide/"><![CDATA[<h3 id="introduction">Introduction</h3>
+
+<p><a href="#the-checklist">Jump to checklist</a></p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/lithophane/ttm_frontlit-480.webp 480w,/assets/img/lithophane/ttm_frontlit-800.webp 800w,/assets/img/lithophane/ttm_frontlit-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/lithophane/ttm_frontlit.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/lithophane/ttm_backlit-480.webp 480w,/assets/img/lithophane/ttm_backlit-800.webp 800w,/assets/img/lithophane/ttm_backlit-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/lithophane/ttm_backlit.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/lithophane/ttm_original.avif-480.webp 480w,/assets/img/lithophane/ttm_original.avif-800.webp 800w,/assets/img/lithophane/ttm_original.avif-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/lithophane/ttm_original.avif" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    To the Moon lithophane lit from the front and back. Original art by Freebird Games
+</div>
+
+<h2 id="intro">Intro:</h2>
+
+<p>A lithophane is a thin plaque of translucent material which has been molded to varying thickness, such that when lit from behind, the different thicknesses show as different shades, forming an image.</p>
+
+<p>3D printed lithophanes are a cool and easy way to display your favorite images. They make for  unique gifts and fun decorations. Any image that looks good in black &amp; white can be used, which makes it perfect for photos and posters.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/lithophane/sdv_frontlit-480.webp 480w,/assets/img/lithophane/sdv_frontlit-800.webp 800w,/assets/img/lithophane/sdv_frontlit-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/lithophane/sdv_frontlit.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/lithophane/sdv_backlit-480.webp 480w,/assets/img/lithophane/sdv_backlit-800.webp 800w,/assets/img/lithophane/sdv_backlit-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/lithophane/sdv_backlit.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/lithophane/sdv_original-480.webp 480w,/assets/img/lithophane/sdv_original-800.webp 800w,/assets/img/lithophane/sdv_original-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/lithophane/sdv_original.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Stardew Valley lithophane lit from the front and back. Original art by ConcernedApe
+</div>
+
+<h3 id="pre-reqs">Pre-reqs:</h3>
+
+<ul>
+  <li>Know how to operate a 3D printer (or have someone who does)</li>
+  <li>Choose an image that looks good in black &amp; white</li>
+  <li>White filament</li>
+</ul>
+
+<h3 id="this-guide-will-teach">This guide will teach:</h3>
+
+<ul>
+  <li>How to turn an image file into a .stl file</li>
+  <li>What slicer settings to use when slicing the .stl file into a .gcode file</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="guide">Guide:</h2>
+
+<h3 id="making-your-file">Making your file</h3>
+
+<p>First, choose an image that looks good in black &amp; white.</p>
+
+<p>There are a few lithophane model generators online. I use https://3dp.rocks/lithophane/</p>
+
+<ul>
+  <li>Upload your image under “Images”</li>
+  <li>Choose “Outer Curve” under model. Do not choose “Flat”! We can make it flat in settings. (Imagine outer curve as a section of a lampshade where the lamp is the light source. I don’t suggest choosing “Flat” because the lithophane must be printed standing up.)</li>
+</ul>
+
+<p>Under “Settings” -&gt; “Image Settings”:</p>
+<ul>
+  <li>Choose “Positive Image” (important) (this is for the lighting from behind effect)</li>
+</ul>
+
+<p>Under “Settings” -&gt; “Model Settings”:</p>
+<ul>
+  <li>Max size: choose somewhere between 100 and 200 (200 is huge imo)</li>
+  <li>Thickness 3mm (impacts how much light needed)</li>
+  <li>Border: 4mm (up to you, none if you want no border)</li>
+  <li><strong>If you don’t want curve</strong>: set curve to 1. Go to Model for a 3d preview.</li>
+</ul>
+
+<h3 id="slicer-setup">Slicer setup:</h3>
+
+<p><strong>We must print the lithophane standing up.</strong></p>
+
+<blockquote>
+  <p>Printing it standing up means that there are more shades of gray the printer can print, resulting in a higher quality image. This is because printers have higher resolution/quality in the x/y direction than z (up-down). If this doesn’t make sense, try slicing it both ways and comparing the preview. If you can do it better, I would love to be proven wrong.</p>
+</blockquote>
+
+<ul>
+  <li>In your slicer, set the quality to a high quality (like 0.15mm layer height or less). Besides what I list below, default settings should be fine.</li>
+  <li>Set the infill to 100%. Setting it lower won’t change anything anyways, as it is so thin that there is no space for infill.</li>
+  <li>Make sure a brim (or raft) is added so it doesn’t fall while printing. Adhesion is important, as this is a thin and tall model. Mine has fallen over before in a ~12-hour long print. This mostly affects non-curved lithophanes.</li>
+  <li>No need to add supports. Any overhangs are tiny enough to not matter.</li>
+</ul>
+
+<p>Make sure the print does not fall over if you don’t make it curved, and assert that the bed is level.</p>
+
+<div class="row mt-3" style="width: 50%; margin: 0 auto">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/lithophane/ttm_printing-480.webp 480w,/assets/img/lithophane/ttm_printing-800.webp 800w,/assets/img/lithophane/ttm_printing-1400.webp 1400w," sizes="95vw" type="image/webp" />
+    
+    <img src="/assets/img/lithophane/ttm_printing.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" data-zoomable="" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  </picture>
+
+  
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    This To the Moon lithophane was printed standing on the short edge, but I have also printed one standing on the long edge and I can't tell if there's a quality difference.
+</div>
+
+<p>Remember that print failures are to be expected, and it will likely take a number of tries to get a clean print (this one took me four tries). I did most of my research for this project by searching on google and reading forums + watching youtube videos.</p>
+
+<p><br /></p>
+
+<h2 id="the-checklist">The Checklist</h2>
+
+<ul>
+    <li>
+        <input type="checkbox" id="1" />
+        <label for="1">Get white filament and black &amp; white image</label>
+    </li>
+    <li>Go to <a href="https://3dp.rocks/lithophane/">https://3dp.rocks/lithophane/</a></li>
+</ul>
+
+<p>Under “Images”</p>
+
+<ul>
+  <li><input type="checkbox" id="2" />
+  <label for="2">Upload Image</label></li>
+</ul>
+
+<p>Under “Model”</p>
+
+<ul>
+  <li><input type="checkbox" id="3" />
+  <label for="3">Select “Outer Curve”</label></li>
+</ul>
+
+<p>Under “Settings” -&gt; “Image Settings”:</p>
+<ul>
+  <li><input type="checkbox" id="4" />
+  <label for="4">Select “Positive Image”</label></li>
+</ul>
+
+<p>Under “Settings” -&gt; “Model Settings”</p>
+<ul>
+    <li>
+        <input type="checkbox" id="5" />
+        <label for="5">"Maximum Size": 100 - 200 (200 is huge imo)</label>
+    </li>
+    <li>
+        <input type="checkbox" id="6" />
+        <label for="6">"Thickness": 3mm</label>
+    </li>
+    <li>
+        <input type="checkbox" id="7" />
+        <label for="7">"Border": 4mm (optional)</label>
+    </li>
+    <li>
+        <input type="checkbox" id="8" />
+        <label for="8">"Curve": 1 (optional)</label>
+    </li>
+</ul>
+
+<p><input type="checkbox" id="9" />
+    <label for="9">Preview and download under “Model”</label></p>
+
+<h4 id="slicer">Slicer:</h4>
+
+<ul>
+    <li>
+        <input type="checkbox" id="10" />
+        <label for="10">Set quality to high quality (like 0.15mm layer height or less)</label>
+    </li>
+    <li>
+        <input type="checkbox" id="11" />
+        <label for="11">Set infill to 100%</label>
+    </li>
+    <li>
+        <input type="checkbox" id="12" />
+        <label for="12">Add brim/raft</label>
+    </li>
+    <li>
+        <input type="checkbox" id="13" />
+        <label for="13">Make sure the model is standing up and supports are off</label>
+    </li>
+</ul>
+
+<p>Now just print and make sure the first few layers are good!</p>
+
+<p><br /></p>
+
+<p>Thanks for reading my post. Please leave a comment or reach out if you have any questions :)</p>]]></content><author><name></name></author><category term="3D-printing" /><category term="3D-printing" /><summary type="html"><![CDATA[Step by step guide to printing your own lithophanes]]></summary></entry></feed>
