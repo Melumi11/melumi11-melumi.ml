@@ -17,13 +17,12 @@
   
   
     
-      2024 |  Roy Huang
+      Run a Minecraft Server Without Port Forwarding for Free – SSH Reverse Tunnel |  Roy Huang
     
   
 </title>
 <meta name="author" content=" Roy Huang">
-<meta name="description" content="My website!
-">
+<meta name="description" content="Free low ping hosting without SaaS like ngrok, playit.gg, or Hamachi">
 
   <meta name="keywords" content="melumi, melumi11">
 
@@ -35,10 +34,9 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content=" Roy Huang">
   <meta property="og:type" content="article">
-  <meta property="og:title" content=" Roy Huang">
-  <meta property="og:url" content="https://melumi11.github.io/blog/2024/">
-  <meta property="og:description" content="My website!
-">
+  <meta property="og:title" content=" Roy Huang | Run a Minecraft Server Without Port Forwarding for Free – SSH Reverse Tunnel">
+  <meta property="og:url" content="https://melumi11.github.io/blog/2024/minecraft-server-hosting/">
+  <meta property="og:description" content="Free low ping hosting without SaaS like ngrok, playit.gg, or Hamachi">
   
     <meta property="og:image" content="favicon.webp">
   
@@ -46,9 +44,8 @@
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content=" Roy Huang">
-  <meta name="twitter:description" content="My website!
-">
+  <meta name="twitter:title" content="Run a Minecraft Server Without Port Forwarding for Free – SSH Reverse Tunnel">
+  <meta name="twitter:description" content="Free low ping hosting without SaaS like ngrok, playit.gg, or Hamachi">
   
     <meta name="twitter:image" content="favicon.webp">
   
@@ -83,7 +80,7 @@
   <link rel="shortcut icon" href="/assets/img/favicon.webp?653bd7624a3706d3ce4932f3ed52b9fc">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="https://melumi11.github.io/blog/2024/">
+<link rel="canonical" href="https://melumi11.github.io/blog/2024/minecraft-server-hosting/">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
@@ -143,8 +140,6 @@
 
           <!-- Other pages -->
           
-          
-            
           
             
           
@@ -241,38 +236,265 @@
     <!-- Content -->
     <div class="container mt-5" role="main">
       
-        <div class="post">
+        
+
+
+
+
+
+
+
+<div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-<i class="fa-solid fa-calendar fa-sm"></i> 2024</h1>
-    <p class="post-description">an archive of posts from this year</p>
+    <h1 class="post-title">Run a Minecraft Server Without Port Forwarding for Free – SSH Reverse Tunnel</h1>
+    <p class="post-meta">
+      Created in December 31, 2024
+      
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <a href="/blog/2024"> <i class="fa-solid fa-calendar fa-sm"></i> 2024 </a>
+      
+      
+          ·  
+        
+          
+            <a href="/blog/tag/games"> <i class="fa-solid fa-hashtag fa-sm"></i> games</a>
+          
+          
+        
+      
+
+      
+          ·  
+        
+          
+            <a href="/blog/category/games">
+              <i class="fa-solid fa-tag fa-sm"></i> games</a>
+          
+          
+        
+      
+    </p>
   </header>
 
-  <article class="archive">
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-          <tr>
-            <th scope="row">Dec 31, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/minecraft-server-hosting/">Run a Minecraft Server Without Port Forwarding for Free – SSH Reverse Tunnel</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row">Jun 17, 2024</th>
-            <td>
-              
-                <a class="post-link" href="/blog/2024/item-rain-gecko/">MKWii Item Rain install guide (gecko code)</a>
-              
-            </td>
-          </tr>
-        
-      </table>
+  <article class="post-content">
+    
+      <div id="table-of-contents">
+        <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#tldr">TL;DR</a></li>
+<li class="toc-entry toc-h3"><a href="#introduction">Introduction</a></li>
+<li class="toc-entry toc-h3"><a href="#what-is-reverse-port-forwarding">What is Reverse Port Forwarding?</a></li>
+<li class="toc-entry toc-h3"><a href="#set-up">Set Up</a></li>
+</ul>
+      </div>
+      <hr>
+    
+    <div id="markdown-content">
+      <h3 id="tldr">TL;DR</h3>
+
+<ul>
+  <li>You host the server but don’t have to port forward</li>
+  <li>Free</li>
+  <li>Low latency</li>
+  <li>Basically no data caps</li>
+  <li>Players don’t have to install anything (just connect to the ip in Minecraft)</li>
+</ul>
+
+<p>Do you have a computer that can run Minecraft but can’t port forward? You can use SSH reverse port forwarding with a free Virtual Private Server (VPS) from Oracle Cloud, Google Cloud, or AWS. By running a simple SSH command (<code class="language-plaintext highlighter-rouge">ssh -i key.pem -R external_port:localhost:internal_port user@vps_ip</code>), you can route traffic from your VPS’s public IP to your local server, allowing friends to connect from anywhere without configuring your router. This method avoids high ping and usage caps, making it a reliable, free alternative for hosting your server. When I want to play with my friends online, I can start my server normally, run the SSH command in another terminal window, and play Minecraft all on the same computer wherever and whenever I want.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>If you’ve ever tried hosting your own Minecraft server but hit a roadblock with port forwarding, you’re not alone. Many people use tools like Hamachi, ngrok, zgrok, zerotier, remote.it, and playit.gg, but these all come with limitations like high ping/latency, usage/data caps, or require clients to download something. However, I recently discovered a better alternative using reverse port forwarding with a free VPS (Virtual Private Server) from providers like Oracle Cloud or AWS (Amazon Web Services).</p>
+
+<p>In this guide, I’ll walk you through how to set up a Minecraft server using reverse port forwarding, step by step.</p>
+
+<h3 id="what-is-reverse-port-forwarding">What is Reverse Port Forwarding?</h3>
+
+<p>Reverse port forwarding allows you to route traffic from your VPS (which has a public IP) back to your local server through SSH. This method bypasses the need for traditional port forwarding on your home router. Think of it like a regular internet connection between your computer and a free private server (VPS) in the cloud. Instead of port forwarding your computer, the VPS is port forwarded and sends the data to your computer. The VPS is only sending Minecraft connections to your computer, so any free or cheap VPS should do. (Most free options have high enough bandwith caps and have enough locations that there should be no issue. You could also host a server directly on a VPS but then you’d need a more powerful one.)</p>
+
+<p>Here’s the basic SSH command we’ll use:</p>
+
+<p><code class="language-plaintext highlighter-rouge">ssh -i key.pem -R external_port:localhost:internal_port user@vps_ip</code></p>
+
+<ul>
+  <li>key.pem: Your SSH key for the VPS.</li>
+  <li>external_port: The port users will connect to on the VPS.</li>
+  <li>internal_port: The port your Minecraft server is running on (usually 25565).</li>
+  <li>user: The username for the VPS.</li>
+  <li>vps_ip: The public IP address of the VPS.</li>
+</ul>
+
+<h3 id="set-up">Set Up</h3>
+
+<p>Step 1: Choose a Free VPS</p>
+<ol>
+  <li>Sign up for a Free VPS:
+    <ul>
+      <li>
+<a href="https://www.oracle.com/cloud/free/" rel="external nofollow noopener" target="_blank">Oracle Cloud Free Tier</a>: “10TB Outbound Data Transfer per month”</li>
+      <li>
+<a href="https://aws.amazon.com/free/" rel="external nofollow noopener" target="_blank">AWS Free Trial</a>: 12 months of Amazon EC2 per account. “100GB of data transfer out to the internet free each month”</li>
+      <li>
+<a href="https://cloud.google.com/free/docs/free-cloud-features#compute" rel="external nofollow noopener" target="_blank">Google Cloud Free Tier</a>: “1 GB of outbound data transfer per month”</li>
+      <li>(I have only tested AWS and Oracle Cloud (OCI). AWS had slightly better ping so that’s what I’ve been using. For OCI free tier you can only expect to get AMD instances which are definitely enough. Upgrading from free tier to pay-as-you-go tier will get you Arm instances which are still free but way beefier. With Arm instances you could <a href="https://www.reddit.com/r/admincraft/comments/qo78be/creating_a_minecraft_server_with_oracle_cloud/" rel="external nofollow noopener" target="_blank">run your server on those</a>)</li>
+    </ul>
+  </li>
+  <li>Set up your VPS:
+    <ul>
+      <li>Look up a reverse port forwarding guide for your VPS provider if the below doesn’t work.</li>
+      <li>Create an instance running a Linux distribution (e.g., Ubuntu 20.04).</li>
+      <li>Configure SSH access and save the key file (I’m using a .pem file) to your computer.</li>
+      <li>Set network settings:
+        <ul>
+          <li>In AWS this is set when creating an instance (or editing one). In Oracle Cloud (OCI) you need to add a security list to your instance’s vcn subnet. You can click around in your VPS instance to find it.</li>
+          <li>Add an inbound rule to allow yourself to SSH into the server. Input the IP address range for the region you are using into the Source field or allow SSH from anywhere (0.0.0.0/0).</li>
+          <li>Add an inbound rule on your security group to allow TCP traffic from anywhere (0.0.0.0/0) for your Minecraft Server’s port (default 25565).</li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>Optional: For Bedrock edition players, add a rule that’s the same but for UDP instead of TCP. If there are both Java and Bedrock players, add both.
+        * This should look like <code class="language-plaintext highlighter-rouge">Source: 0.0.0.0/0; IP Protocol: TCP; Source Port Range: All; Destination Port Range: 25565</code>
+</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Step 2: Set Up Your Minecraft Server</p>
+<ol>
+  <li>Install Minecraft Server Locally
+    <ul>
+      <li>I won’t go over how to do this here, but I suggest including <a href="https://docs.papermc.io/paper/aikars-flags" rel="external nofollow noopener" target="_blank">Aikar’s Flags</a> if you haven’t heard of them.</li>
+    </ul>
+  </li>
+  <li>Confirm it’s running on your internal port (default: 25565).
+    <ul>
+      <li>You can test this by connecting to localhost in Minecraft (or localhost:port_num if not default).</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Step 3: Configure Reverse Port Forwarding</p>
+<ol>
+  <li>SSH into Your VPS:</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">ssh -i key.pem user@vps_ip</code></p>
+
+<ul>
+  <li>Replace key.pem, user, and vps_ip with your actual values.</li>
+</ul>
+
+<ol>
+  <li>Edit the sshd_config file on your VPS:
+    <ul>
+      <li>Open the SSH configuration file:</li>
+    </ul>
+  </li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">sudo nano /etc/ssh/sshd_config</code></p>
+
+<ul>
+  <li>Look for the line <code class="language-plaintext highlighter-rouge">#GatewayPorts no</code> and change it to <code class="language-plaintext highlighter-rouge">GatewayPorts yes</code>
+</li>
+  <li>This ensures the VPS accepts connections from any external IP on the forwarded port.</li>
+  <li>exit nano with <code class="language-plaintext highlighter-rouge">Ctrl+X</code> and <code class="language-plaintext highlighter-rouge">yes</code> to save</li>
+</ul>
+
+<ol>
+  <li>Restart the SSH service:</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">sudo systemctl restart ssh</code></p>
+
+<ol>
+  <li>Exit SSH:</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">exit</code></p>
+
+<p>Step 4: Start Reverse Port Forwarding:</p>
+<ul>
+  <li>Run the following command on your local machine, substituting <code class="language-plaintext highlighter-rouge">key.pem</code>, <code class="language-plaintext highlighter-rouge">external_port</code>, <code class="language-plaintext highlighter-rouge">internal_port</code>, <code class="language-plaintext highlighter-rouge">user</code>, and <code class="language-plaintext highlighter-rouge">vps_ip</code> with your own values:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">ssh -i key.pem -R external_port:localhost:internal_port user@vps_ip</code></p>
+
+<ul>
+  <li>This routes traffic from port external_port on the VPS to port internal_port on your local machine. (If your Minecraft Server is running on the default port but you want players to connect to port 36969, you could do <code class="language-plaintext highlighter-rouge">ssh -i key.pem -R 36969:localhost:25565 user@vps_ip</code>)</li>
+</ul>
+
+<p>Step 5: Test Your Server</p>
+<ul>
+  <li>Open Minecraft and connect to the server using the VPS public IP: vps_ip:port_num.</li>
+</ul>
+
+<p>Additional Tips</p>
+<ul>
+  <li>Make sure the SSH connection is active when trying to use the server</li>
+  <li>Use ethernet for reduced ping and lag spikes</li>
+  <li>Make sure you’re only running one VPS at a time so you don’t go over the free limits</li>
+  <li>Consider changing the external port number and/or whitelist, especially if you’re running an “offline” server. IP scanning bots may look for vulnerable ports and try to hack/grief your server
+    <ul>
+      <li>To choose a port number, you can look at <a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers" rel="external nofollow noopener" target="_blank">https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers</a> and choose a number that isn’t commonly used.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>By using reverse port forwarding and a free VPS, you can host a Minecraft server without port forwarding or third-party tools. It’s a cost-effective and low-latency solution that opens up new possibilities for your gaming experience!</p>
+
+<p><br></p>
+
+<p>Thanks for reading my post. Please leave a comment or reach out if you have any questions :)</p>
+
     </div>
   </article>
+
+  
+
+  
+
+  
+    
+  
+
+  
+  
+    <div id="giscus_thread" style="max-width: 930px; margin: 0 auto;">
+  
+    <script>
+      let giscusTheme = determineComputedTheme();
+      let giscusAttributes = {
+        src: 'https://giscus.app/client.js',
+        'data-repo': 'Melumi11/melumi11.github.io',
+        'data-repo-id': 'R_kgDOI_mkmA',
+        'data-category': 'Announcements',
+        'data-category-id': 'DIC_kwDOI_mkmM4CjXXH',
+        'data-mapping': 'title',
+        'data-strict': '1',
+        'data-reactions-enabled': '1',
+        'data-emit-metadata': '0',
+        'data-input-position': 'bottom',
+        'data-theme': giscusTheme,
+        'data-lang': 'en',
+        crossorigin: 'anonymous',
+        async: '',
+      };
+
+      let giscusScript = document.createElement('script');
+      Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+      document.getElementById('giscus_thread').appendChild(giscusScript);
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://giscus.app/?ref_noscript" rel="external nofollow noopener" target="_blank">comments powered by giscus.</a>
+</noscript>
+  
+</div>
+
+  
 </div>
 
       
